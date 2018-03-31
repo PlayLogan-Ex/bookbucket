@@ -31,7 +31,7 @@ if ($_POST) {
 	if(count($errors) == 0){
 		include("../config/db/DBConnect.php");
 		if ($connection){
-			echo"connection established";
+			// DEBUG: echo"connection established";
 
 			$first_name = mysqli_real_escape_string($connection, $_POST['first_name']);
 			$surname = mysqli_real_escape_string($connection, $_POST['surname']);
@@ -45,8 +45,10 @@ if ($_POST) {
 			$query = "INSERT INTO `user` (`first_name`, `surname`, `email`, `password`, `contact_no`, `city`, `area`, `gender`) VALUES ( '$first_name', '$surname', '$email', '$password', '$contact_no', '$city', '$area', '$gender')";
 			$update = mysqli_query($connection, $query);
 
-			if($update) {echo"$name's registration successful.";
-			header("Location:Congratulation.php");}
+			if($update) {
+				// DEBUG: echo"$name's registration successful.";
+				header("Location:Congratulation.php");
+			}
 		}
 	}
  }

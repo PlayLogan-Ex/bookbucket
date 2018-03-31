@@ -1,3 +1,8 @@
+<?php
+  if($_POST){
+    header("Location:Login.php");
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,10 +31,5 @@
 			<input type="submit" name="login" value="Login" class="button">
 		</form>
 	</div>
-	<?php
-	if($_POST){
-		header("Location:Login.php");
-	}
-	?>
 </body>
 </html>

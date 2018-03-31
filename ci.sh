@@ -63,8 +63,10 @@ echo
 ## Default: Commit skipped|forgotten
 ## 🔴 TODO: Good update but fix errors
 ## 💚 localhost: cr2018.Mar24.1.5.0
+## 🔴 production-server issue v1.5.3
+## 💚 live v1.5.3
 
-git commit -m "🔴 Solved: Issue option not exist at forked repo"
+git commit -m "💚 live upto v1.5.3"
 
 ############
 # Step: 05 #
