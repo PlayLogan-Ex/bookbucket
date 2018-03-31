@@ -64,9 +64,9 @@ echo
 ## 🔴 TODO: Good update but fix errors
 ## 💚 localhost: cr2018.Mar24.1.5.0
 ## 🔴 production-server issue v1.5.3
-## 💚 live v1.5.3
+## 💚 live upto v1.5.3
 
-git commit -m "💚 live upto v1.5.3"
+git commit -m "UPLOAD: issue images"
 
 ############
 # Step: 05 #
