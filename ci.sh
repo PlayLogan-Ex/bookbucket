@@ -65,8 +65,9 @@ echo
 ## 💚 localhost: cr2018.Mar24.1.5.0
 ## 🔴 production-server issue v1.5.3
 ## 💚 live upto v1.5.3
+## UPLOAD: issue images
 
-git commit -m "UPLOAD: issue images"
+git commit -m "💚 live upto v1.6.0"
 
 ############
 # Step: 05 #

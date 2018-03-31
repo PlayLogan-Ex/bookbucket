@@ -51,6 +51,13 @@ function submitOrder() {
       document.getElementById("cell_number_required").innerHTML = "";
     }
 }
+// TODO: call this function from php echo
+function callClicked() {
+    console.log("Reached");
+    alert("reached");
+    document.getElementById("call_clicked").innerHTML = "PHONE_NUMBER";
+    return true;
+}
 
 // NO Need js validation for post
 // AS, done through HTML

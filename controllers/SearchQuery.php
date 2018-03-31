@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="..\css\constant-styles.css">
+    <link rel="stylesheet" type="text/css" href="..\css\timeline-styles.css">
     <script src="..\js\libs.js"></script>
     <style type="text/css">
       /*
@@ -292,10 +293,19 @@
                 echo "</div>";
                 echo "<br>";
                 echo '<hr>';
-                echo '<p style="background-color: #e9ebee; border-radius: 25px; padding: 10px; width:40px;font-weight:bold;">CALL</p>';
+
+                echo '<div style="margin-top: 15px;overflow:auto;">';
+                  echo '<div style="float: left;"><button class="button call_button" onclick="callClicked()" id="call_button">CALL</button> <span id="call_clicked" style="color:green;"></span></div>';
+                  // DEBUG: Challenge: make other type solution than this
+                  //echo "<form action='DeletePost.php?postID=".$row['postID']."' method='post'>";
+                  //echo '<div style="float: right;"><button class="button delete_post_button">Delete post</button></div>';
+                  echo "<a class='button delete_post_button' style='float: right;' href='DeletePost.php?postID=".$row['postID']."' onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a>";
+                  // echo '<form/>';
+                echo '</div>';
               echo '</div>';
             echo '</div><br>';
           }
+
           function noPostFound () {
             echo '<div>';
                 echo '<div class="post">';
