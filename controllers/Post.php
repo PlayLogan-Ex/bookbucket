@@ -18,6 +18,7 @@
     $purpose = mysqli_real_escape_string($connection, $_POST['purpose']);
     $price = mysqli_real_escape_string($connection, $_POST['price']);
     $location = mysqli_real_escape_string($connection, $_POST['location']);
+    $phone = mysqli_real_escape_string($connection, $_POST['phone']);
 
     // DEBUG:
     // echo "purpose: $purpose".'<br>';
@@ -27,13 +28,13 @@
 
     $postTime = date('Y-m-d H:i:s');
     //insert data to database
-    $query = "INSERT INTO `post` (`description`, `purpose`, `price`, `location`, `postTime`, `image`) VALUES ( '$description', '$purpose', '$price', '$location', '$postTime', '$image')";
+    $query = "INSERT INTO `post` (`description`, `purpose`, `price`, `location`, `phone`, `postTime`, `image`) VALUES ( '$description', '$purpose', '$price', '$location', '$phone', '$postTime', '$image')";
     //$query2 = "INSERT INTO order(book_name, author, quantity, cell_number) VALUES ('$book_name','$author','$quantity', '$cell_number')";
     $update = mysqli_query($connection, $query);
 
     //display success message
     if($update) {
-      // TODO: show user update success, Route: Done";
+      // TODO: show user update success through notification, Route: Done";
 
       // Move the uploaded image into the folder: images
       if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {

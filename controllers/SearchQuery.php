@@ -193,10 +193,11 @@
   					<input type="submit" name="Sell" value="Sell">
   				 </div>
           </form>
-          <form action="Post.php" method="post" enctype="multipart/form-data">
+          <form action="Post.php" method="post" enctype="multipart/form-data" autocomplete="on">
             <div class="post">
               <p style="width:100px;font-weight:bold;">Make post</p>
-              <textarea id="description" name="description" type="text" rows="4" cols="60" placeholder="Describe your book..." autofocus required></textarea><span id="description_required" style="color:red;"></span>
+              <!-- TODO: Make pattern's regular expresseion to check valid description for post -->
+              <textarea title="TODO: Think to get pattern=write_regexp for checking accepted description" id="description" name="description" type="text" rows="4" cols="60" placeholder="Describe your book..." autofocus required></textarea><span id="description_required" style="color:red;"></span>
               <div style="position: relative;">
                 <!-- TODO: make userfriendly: upload image
                 <div style="width:90px; background-color: #e9ebee; border-radius: 25px; padding: 10px; font-weight:bold;font-size:14px;">Upload image</div>
@@ -205,8 +206,14 @@
                   <input required type="radio" name="purpose" value="rent"> Rent
                   <input required type="radio" name="purpose" value="sell"> Sell
                   <!-- number   supported by HTML5: https://www.w3schools.com/html/html_form_input_types.asp-->
-                  <input required type="number" name="price" placeholder="price" style="width: 50px; margin-left: 30px;">
-                  <input required type="text" name="location" placeholder="location" style="width: 60px; margin-left: 5px;">
+                  <!--pattern="regular expresseion", https://www.w3schools.com/tags/att_input_pattern.asp-->
+                  <!--You may follow up: https://www.phpgang.com/author/sarah -->
+
+                  <!-- Defining Patterns for Data, That Needs to Be Validated -->
+                  <!-- pattern="regexp", regexp = accepted data-->
+                  <input required pattern="\d*"           title="Please input integer only [0-9]+" maxlength="5" type="text" name="price" placeholder="price" style="width: 50px; margin-left: 20px;">
+                  <input required pattern="[A-Za-z-0-9]+" title="Accepted location name pattern [A-Za-z-0-9]+" maxlength="20" name="location" placeholder="location" style="width: 60px; margin-left: 5px;">
+                  <input required type="tel"              title="Please type your phone number" maxlength="20" name="phone" placeholder="phone" style="width: 60px; margin-left: 5px;">
 
                   <input type="file" name="image" required style="margin-left: 20px;">
                 </div>
@@ -295,7 +302,7 @@
                 echo '<hr>';
 
                 echo '<div style="margin-top: 15px;overflow:auto;">';
-                  echo '<div style="float: left;"><button class="button call_button" onclick="callClicked()" id="call_button">CALL</button> <span id="call_clicked" style="color:green;"></span></div>';
+                  echo '<div style="float: left;"><button class="button call_button" onclick="callClicked()" id="call_button">'.$row['phone'].'</button> <span id="call_clicked" style="color:green;"></span></div>';
                   // DEBUG: Challenge: make other type solution than this
                   //echo "<form action='DeletePost.php?postID=".$row['postID']."' method='post'>";
                   //echo '<div style="float: right;"><button class="button delete_post_button">Delete post</button></div>';

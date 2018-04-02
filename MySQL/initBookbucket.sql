@@ -92,7 +92,10 @@ ALTER TABLE post
 ADD COLUMN price VARCHAR(5);
 
 ALTER TABLE post
-ADD COLUMN location VARCHAR(10);
+ADD COLUMN location VARCHAR(20);
+
+ALTER TABLE post
+  ADD COLUMN phone VARCHAR(20);
 
 ALTER TABLE post
   ADD COLUMN postTime datetime;
