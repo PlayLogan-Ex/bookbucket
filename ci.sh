@@ -67,7 +67,7 @@ echo
 ## 💚 live upto v1.5.3
 ## UPLOAD: issue images
 
-git commit -m "💚 live upto v1.7.0"
+git commit -m "UPLOAD feature images"
 
 ############
 # Step: 05 #
