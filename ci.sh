@@ -67,7 +67,10 @@ echo
 ## 💚 live upto v1.5.3
 ## UPLOAD: issue images
 
-git commit -m "My first commit at bookbucket: 2018.Apr20"
+# 2018.Apr20
+## ENUM: My first commit at bookbucket: 2018.Apr20
+
+git commit -m "SEE todo.md"
 
 ############
 # Step: 05 #
@@ -87,7 +90,7 @@ git remote -v
 # Change your remote's URL from SSH to HTTPS with the git remote set-url command.
 echo
 echo [ Done ]  Updating remote URL.
-git remote set-url origin https://github.com/enamulhaque028/bookbucket
+git remote set-url origin https://github.com/FreshersRepo/bookbucket
 ############
 # Step: 07 #
 ############
@@ -106,4 +109,4 @@ echo
 echo 08. Pushing local codebase to remote repo...Repo-to-repo collaboration: git push
 echo
 git push origin master
-git push --all -f https://github.com/enamulhaque028/bookbucket
+git push --all -f https://github.com/FreshersRepo/bookbucket
