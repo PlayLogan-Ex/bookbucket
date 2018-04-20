@@ -24,8 +24,8 @@
 
 echo
 echo [ Done ]  Initializing who am I.
-git config --global user.email "enamulhaque028@gmail.com"
-git config --global user.name "Enamul Haque"
+git config --global user.email "sakib.rahman.0000@gmail.cormen"
+git config --global user.name "sakib-rahman-bangladesh"
 
 
 ############
