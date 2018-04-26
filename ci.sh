@@ -1,4 +1,4 @@
-##################################################
+﻿##################################################
 ### Script : ci.sh (14-10-2017)                ###
 ### CI     : Continious Integration            ###
 ### Target : Tool dev			                     ###
@@ -70,7 +70,10 @@ echo
 # 2018.Apr20
 ## ENUM: My first commit at bookbucket: 2018.Apr20
 
-git commit -m "SEE todo.md"
+# 2018.Apr26
+## GIVEN tasks to enum
+
+git commit -m "GIVEN tasks to enum"
 
 ############
 # Step: 05 #
