@@ -73,7 +73,10 @@ echo
 # 2018.Apr26
 ## GIVEN tasks to enum
 
-git commit -m "GIVEN tasks to enum"
+# 2018.Apr28
+## ADD samples files: policy + user agreement
+
+git commit -m "ADD samples files: policy + user agreement"
 
 ############
 # Step: 05 #
