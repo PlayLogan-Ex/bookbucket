@@ -76,7 +76,10 @@ echo
 # 2018.Apr28
 ## ADD samples files: policy + user agreement
 
-git commit -m "ADD samples files: policy + user agreement"
+# 2018.May1
+## ASSIGNED task to enum: front-end understanding
+
+git commit -m "ASSIGNED task to enum: front-end understanding"
 
 ############
 # Step: 05 #
