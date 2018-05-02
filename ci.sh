@@ -1,9 +1,9 @@
 ﻿##################################################
 ### Script : ci.sh (14-10-2017)                ###
 ### CI     : Continious Integration            ###
-### Target : Tool dev			                     ###
-###	     Automated Continious Integration      ###
-###	     among local & remote repo	           ###
+### Target : Tool dev			       ###
+###	     Automated Continious Integration  ###
+###	     among local & remote repo	       ###
 ##################################################
 
 
@@ -24,7 +24,7 @@
 
 echo
 echo [ Done ]  Initializing who am I.
-git config --global user.email "sakib.rahman.0000@gmail.cormen"
+git config --global user.email "sakib.rahman.0000@gmail.com"
 git config --global user.name "sakib-rahman-bangladesh"
 
 
@@ -79,7 +79,10 @@ echo
 # 2018.May1
 ## ASSIGNED task to enum: front-end understanding
 
-git commit -m "ASSIGNED task to enum: front-end understanding"
+# 2018.May2
+## CREATE support dir for developers
+
+git commit -m "CREATE support dir for developers"
 
 ############
 # Step: 05 #
