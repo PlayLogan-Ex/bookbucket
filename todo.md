@@ -20,8 +20,8 @@ Todo Lists
 
 > ENUM: 2018.Apr20
 
-1. **TODO:** UNDERSTAND codebase
-2. **TODO:** MAKE good easy todo.md presentation 
+1. **DOING:** UNDERSTAND codebase
+2. **TODO:** MAKE good easy todo.md presentation
 
 > Name 2: 2018.Apr?
 
