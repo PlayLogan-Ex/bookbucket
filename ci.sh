@@ -81,8 +81,9 @@ echo
 
 # 2018.May2
 ## CREATE support dir for developers
+## CREATE solve-issues
 
-git commit -m "CREATE support dir for developers"
+git commit -m "CREATE solve-issues"
 
 ############
 # Step: 05 #
