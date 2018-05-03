@@ -1,9 +1,9 @@
-##################################################
+﻿##################################################
 ### Script : ci.sh (14-10-2017)                ###
 ### CI     : Continious Integration            ###
-### Target : Tool dev			                     ###
-###	     Automated Continious Integration      ###
-###	     among local & remote repo	           ###
+### Target : Tool dev			       ###
+###	     Automated Continious Integration  ###
+###	     among local & remote repo	       ###
 ##################################################
 
 
@@ -24,8 +24,9 @@
 
 echo
 echo [ Done ]  Initializing who am I.
-git config --global user.email "enamulhaque028@gmail.cormen"
-git config --global user.name "enamulhaque028"
+
+git config --global user.email "sakib.rahman.0000@gmail.com"
+git config --global user.name "sakib-rahman-bangladesh"
 
 
 ############
@@ -70,7 +71,20 @@ echo
 # 2018.Apr20
 ## ENUM: My first commit at bookbucket: 2018.Apr20
 
-git commit -m "DOING"
+# 2018.Apr26
+## GIVEN tasks to enum
+
+# 2018.Apr28
+## ADD samples files: policy + user agreement
+
+# 2018.May1
+## ASSIGNED task to enum: front-end understanding
+
+# 2018.May2
+## CREATE support dir for developers
+## CREATE solve-issues
+
+git commit -m "CREATE solve-issues"
 
 ############
 # Step: 05 #
