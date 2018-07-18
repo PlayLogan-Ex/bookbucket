@@ -29,9 +29,10 @@ def main():
             os.system('sudo ' + lampp + ' start')
         else:
             install()
-
-    if args.stop:
+    elif args.stop:
         os.system('sudo ' + lampp + ' stop')
+    else:
+        parser.print_help()
 
 if __name__ == '__main__':
     main()
