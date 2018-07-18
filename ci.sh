@@ -83,7 +83,10 @@ echo
 ## CREATE support dir for developers
 ## CREATE solve-issues
 
-git commit -m "CREATE solve-issues"
+# 2018.July18
+## Add bookbucket-2018-july-18.sql
+
+git commit -m "Add bookbucket-2018-july-18.sql"
 
 ############
 # Step: 05 #
