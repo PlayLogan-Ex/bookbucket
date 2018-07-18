@@ -1,5 +1,5 @@
 # Help for XAMPP_Installer
-> "We will rule the world someday..."
+> "We will rule the world someday..."  
 > _Sakib Vai_
 
 **The Installers are able to check whether XAMPP is already installed or not**
