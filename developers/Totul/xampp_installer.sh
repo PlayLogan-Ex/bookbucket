@@ -20,10 +20,14 @@ if [[ $1 == "l" ]]; then
         wget -O xampp.run https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/7.2.7/xampp-linux-x64-7.2.7-0-installer.run
         sudo chmod 755 xampp.run
         sudo ./xampp.run
+        rm -rf xampp.run
     fi
 elif [[ $1 == "s" ]]; then
     # Stops XAMPP Server
     sudo "$lampp" stop
+elif [[ $1 == "r" ]]; then
+    # Re-Starts XAMPP Server
+    sudo "$lampp" restart
 else
     # Help Message
     echo ""
