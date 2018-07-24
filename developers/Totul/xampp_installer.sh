@@ -21,6 +21,10 @@ if [[ $1 == "l" ]]; then
         sudo chmod 755 xampp.run
         sudo ./xampp.run
         rm -rf xampp.run
+        sudo cp xampp_installer.sh /usr/share/xampp.sh
+        shell=$(echo $SHELL | tr -d /bin/)
+        shell+="rc"
+        echo "alias xmp='/usr/share/xampp.sh'" > ~/.$shell
     fi
 elif [[ $1 == "s" ]]; then
     # Stops XAMPP Server
@@ -35,4 +39,5 @@ else
     echo -e "Help:"
     echo -e "\tTo Start/Launch LAMPP Server pass \"l\" as Argument"
     echo -e "\tTo Stop LAMPP Server pass \"s\" as Argument\n"
+    echo -e "\tTo Re-Start LAMPP Server pass \"r\" as Argument\n\n"
 fi
