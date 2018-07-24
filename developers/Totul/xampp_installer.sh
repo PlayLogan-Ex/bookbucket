@@ -17,6 +17,7 @@ if [[ $1 == "l" ]]; then
     else
         # Downloads and installs XAMPP Server
         # User action needed on GUI
+        echo -e "No Installed Version Found!\nInstalling.......\n\n"
         wget -O xampp.run https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/7.2.7/xampp-linux-x64-7.2.7-0-installer.run
         sudo chmod 755 xampp.run
         sudo ./xampp.run
